@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>car</title>
+</head>
+<body>
+  <script>
+    var Bugatti={
+      make: 'Bugatti',
+      model:'veyron',
+      year: 2017, 
+      color: 'pink',
+      passcngers: 2,
+      convertible: true,
+      hileage: 2000000
+    }
+    var audi={
+      make: 'audi',
+      model:'Ab',
+      year: 2016, 
+      color:'black',
+      passcngers: 4 ,
+      convertible: false,
+      hileage: 5000
+    }
+    function Newcar(car){ 
+      if(car.year>=2017 && car.hileage<=100000){
+      document.write(car.make + "是好车<br>")
+    }
+     else{
+       document.write(car.make + "不是很好") 
+     }
+   }
+    Newcar(audi)
+    Newcar(Bugatti)
+  </script>
+  
+</body>
+</html>

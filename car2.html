@@ -26,10 +26,23 @@
       convertible: false,
       hileage: 5000,
       drive: function(){
+        if(this.convertible){
         alert("zoom zoom!");
+        }
+          else{
+          alert("还没有启动")
+          }
+      },
+      startdrive:function(){
+        this.convertible=true;
+      },
+      stopdrive:function(){
+        this.convertible=false;
       }
     }
-    
+    audi.drive()
+    audi.stopdrive()
+     document.write(audi.getcolor())
     function Newcar(car){ 
       if(car.year>=2017 && car.hileage<=100000){
       document.write(car.make + "是好车<br>")
@@ -38,10 +51,23 @@
        document.write(car.make + "不是很好") 
      }
    }
-    Newcar(audi)
-    Newcar(Bugatti)
-    audi.drive()
+   var fiat={
+      make: 'audi',
+      model:'Ab',
+      year: 2016, 
+      color:'black',
+      passcngers: 4 ,
+      convertible: false,
+      hileage: 5000,
+      setcolor:function(c){
+        this.color=c
+      },
+      getcolor:function(){
+        return this.color;
+      }
+   }
   </script>
   
 </body>
+</html>
 </html>

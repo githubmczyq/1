@@ -6,20 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script>
     function ARR(){
-      var aa=document.getElementById('title');
-
+      var aa=document.getElementById('title') ;
+      
       title.setAttribute("class","redex");
-      init.setAttribute("src","2.gif");
-      alert(ad.innerHTML);
-      aa.innerHTML =" 你好糜恒 ";
+      JD = document.getElementById("init")
+      alert(aa.innerHTML);
+      aa.innerHTML =" 你好 ";
       
     }
     window.onload = ARR;
     
+    function config(){
+      if(JD.getAttribute("src") =="1.gif"){
+       JD.setAttribute("src","2.gif");
+      }else{
+        JD.setAttribute("src","1.gif");
+      }
+
+    }
   </script>
 </head>
 <body>
     <h1 id='title'>Hello word</h1>
     <img id ="init"src="1.gif" alt="动图" >
+    <button onclick="config()" onclick="qqq()"> “更换图片”<br> </button>
 </body>
 </html>
